@@ -1,0 +1,39 @@
+
+.hero {
+    border-bottom: 1px solid colors.$color_black;
+  
+    .hero_container{
+      display:flex;
+      justify-content: align.$align_center;
+      gap:5px;
+  
+  
+    }
+  
+    .hero_icon{
+      width: 30px;
+      align-self: align.$align_center;
+      margin-bottom: 10px;
+  
+      @media screen and (min-width: 550px) {
+        width: 50px;
+        margin-bottom: 20px;
+        
+      }
+    }
+  
+    .hero_text {
+      margin-bottom: 50px;
+      margin-top: 50px;
+      font-family: fonts.$menu_font, cursive;
+      font-weight: 300;
+      text-align: align.$align_center;
+      font-size: 40px;
+      align-self: align.$align_center;
+    
+      @media screen and (min-width: 550px){
+        font-size: 60px;
+      }
+  
+      }
+  }

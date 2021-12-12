@@ -1,0 +1,48 @@
+@use 'colors';
+@use 'fonts';
+
+
+.ctc_text1 {
+    grid-row: 2;
+    font-family: fonts.$form_font;
+    color: colors.$color_black;
+    font-size: 16px;
+    width: 100%;
+  
+    @media screen and (min-width: 900px){
+      font-size: 20px;
+    }
+  
+    li{
+      list-style: none;
+      font-family: fonts.$body_font;
+      margin-bottom: 10px;
+  
+      @media screen  and (min-width: 550px){
+        margin-bottom: 20px;
+        
+      }
+    }
+    .ctc_phone {
+      list-style-image: url(/images/phone_icon.svg);
+    }
+  
+    .ctc_mail {
+      list-style-image: url(/images/mail_icon.svg);
+    }
+  
+    .ctc_address{
+      list-style-image: url(/images/home_icon.svg);
+    }
+  
+    ul{
+      padding-left: 20px;
+    }
+  
+    a {
+      text-decoration: none;
+      color: colors.$color_black;
+    }
+  
+  
+  }

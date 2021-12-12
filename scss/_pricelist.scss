@@ -1,0 +1,49 @@
+@use 'colors';
+@use 'align';
+@use 'fonts';
+
+
+.pricelist {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  
+    @media screen and (min-width: 550px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    @media screen and (min-width: 900px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  .pricelist_text {
+    border: 1px solid colors.$color_light;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: fonts.$body_font;
+    box-shadow: 1px 1px 3px colors.$color_light;
+    background: colors.$color_light;
+    background-image: linear-gradient(to top, #ffffff, #d5d5da, #cfcfd3);
+  
+    h1 {
+      text-align: align.$align_center;
+      color: colors.$color_white;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+  
+    h2 {
+      text-align: align.$align_center;
+      color: colors.$color_white;
+      margin-top: 0;
+    }
+  
+    li {
+      margin-bottom: 10px;
+      font-size: 18px;
+      list-style-image: url(/images/header_icon_small.svg);
+  
+    }
+  
+  }

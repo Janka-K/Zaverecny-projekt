@@ -256,60 +256,41 @@ footer {
   width: 100%;
 }
 
-.about {
-  display: grid;
-  grid-template-rows: 1fr;
-  justify-content: center;
-}
-@media screen and (min-width: 1000px) {
-  .about {
-    grid-template-columns: 640px 640px;
-  }
-}
-.about .about_photo {
-  grid-column: 1;
-}
-@media screen and (min-width: 1000px) {
-  .about .about_photo {
-    width: 640px;
-  }
-}
-.about img {
+.about_photo img {
   width: 100%;
-  display: block;
-  border-radius: 5px 5px 0 0;
 }
-@media screen and (min-width: 1000px) {
-  .about img {
-    border-radius: 5px 0 0 5px;
-  }
-}
-.about .about_text {
-  grid-row: 2;
+
+.about_text {
   font-family: "Montserrat", san-serif;
   text-align: start;
   font-size: 18px;
-  border: 2px solid grey;
   padding: 15px;
   font-weight: 400;
 }
-@media screen and (min-width: 1000px) {
-  .about .about_text {
-    grid-column: 2;
-    grid-row: 1;
-    border-radius: 0 5px 5px 0;
-    font-size: 20px;
-    box-shadow: 1px 1px 8px lightgray;
+@media screen and (min-width: 550px) {
+  .about_text {
+    text-align: center;
   }
 }
-.about p {
+.about_text p {
   margin-top: 0;
+  color: grey;
 }
-.about a {
+.about_text a {
   text-decoration: none;
   color: grey;
   font-weight: bold;
   font-style: italic;
+}
+.about_text h1 {
+  color: black;
+  font-size: 20px;
+}
+@media screen and (min-width: 550px) {
+  .about_text h1 {
+    text-align: center;
+    font-size: 25px;
+  }
 }
 
 .container {
@@ -420,6 +401,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   width: 270px;
 }
+
 @media screen and (min-width: 550px) {
   .form_body button {
     width: 320px;

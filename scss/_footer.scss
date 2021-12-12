@@ -1,0 +1,14 @@
+@use 'colors';
+@use 'align';
+@use 'fonts';
+
+footer {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: align.$align_center;
+    background-color: colors.$color_grey;
+    background-image: linear-gradient(to right top, #ffffff, #d7d7dd, #c6c6cc);
+    color: colors.$color_black;
+    font-family: fonts.$menu_font;
+    font-size: 18px;
+  }

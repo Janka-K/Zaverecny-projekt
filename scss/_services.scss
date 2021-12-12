@@ -1,0 +1,41 @@
+@use 'colors';
+@use 'align';
+@use 'fonts';
+
+
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  
+    @media screen and (min-width: 550px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    @media screen and (min-width: 900px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  .services_box {
+    outline: 1px solid colors.$color_grey;
+    outline-offset: -10px;
+    font-family: fonts.$menu_font;
+    padding: 10px;
+    box-shadow: 1px 1px 4px colors.$color_light;
+    color: colors.$color_grey;
+    border-radius: 5px;
+  
+    h1 {
+      text-align: align.$align_center;
+      color: colors.$color_grey;
+    }
+  
+    li {
+      margin-bottom: 10px;
+      font-size: 15px;
+      list-style-image: url(/images/header_icon_small.svg);
+    }
+  
+  }

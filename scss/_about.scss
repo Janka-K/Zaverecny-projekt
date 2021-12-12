@@ -1,0 +1,48 @@
+@use 'colors';
+@use 'align';
+@use 'fonts';
+
+
+.about_photo {
+    img{
+      width: 100%;
+    }
+  }
+  
+  
+  .about_text {
+    font-family: fonts.$form_font;
+    text-align: start;
+    font-size: 18px;
+    padding: 15px;
+    font-weight: 400;
+  
+    @media screen and (min-width: 550px) {
+      text-align: align.$align_center;
+      
+    }
+  
+    p {
+      margin-top: 0;
+      color: colors.$color_grey;
+    }
+  
+    a {
+      text-decoration: none;
+      color: colors.$color_grey;
+      font-weight: bold;
+      font-style: italic;
+    }
+  
+    h1{
+      color: colors.$color_black;
+      font-size: 20px;
+      
+      @media screen and (min-width: 550px) {
+        text-align: align.$align_center;
+        font-size: 25px;
+        
+        
+      }
+    }
+  }
