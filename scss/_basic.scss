@@ -7,14 +7,14 @@ body {
 }
 
 .middle {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 30px;
   margin-right: 30px;
 }
 
 .middle_header {
   text-align: align.$align_center;
-  font-family: fonts.$form_font;
+  font-family: fonts.$body_font;
   margin-bottom: 40px;
   color: colors.$color_grey;
   font-size: 15px;

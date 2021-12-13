@@ -1,3 +1,8 @@
+@use 'fonts';
+@use 'colors';
+@use 'align';
+
+
 .menu {
     margin-left: 10px;
     margin-top: 10px;
@@ -10,6 +15,7 @@
   
   .menu__toggler {
     font-family: fonts.$menu_font;
+  
   
     @media screen and (min-width: 700px) {
       display:none;
@@ -44,10 +50,17 @@
     border-bottom: 1px solid colors.$color_black;
     @media screen and (min-width: 700px) {
       border: none;
-  
-      
+    
     }
   }
+
+  .menu__item--active {
+        border-bottom: 3px solid colors.$color_black;
+      }
+  
+
+    
+  
   
   .menu__link {
     display: block;
@@ -70,3 +83,4 @@
       
     }
   }
+

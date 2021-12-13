@@ -45,7 +45,7 @@
 
   label {
     font-size: 16px;
-    font-family: fonts.$form_font;
+    font-family: fonts.$body_font;
     display: block;
     font-size: 16px;
     color: colors.$color_grey;
@@ -68,6 +68,9 @@ button {
   border: none;
   font-family: fonts.$body_font;
   width: 270px;
+    &:hover, &:active {
+      background-color: colors.$color_black;
+    }
 
   @media screen and (min-width: 550px) {
     width: 320px;
@@ -100,6 +103,6 @@ button {
   margin-bottom: 20px;
 
   h1 {
-    font-family: fonts.$form_font;
+    font-family: fonts.$body_font;
   }
 }

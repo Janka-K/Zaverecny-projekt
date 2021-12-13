@@ -1,12 +1,8 @@
-body {
-  margin: 0px;
-}
-
 footer {
   margin-top: 100px;
   padding: 20px;
   text-align: center;
-  background-color: grey;
+  background-color: gray;
   background-image: linear-gradient(to right top, #ffffff, #d7d7dd, #c6c6cc);
   color: black;
   font-family: "Sacramento", san-serif;
@@ -65,6 +61,10 @@ footer {
   }
 }
 
+.menu__item--active {
+  border-bottom: 3px solid black;
+}
+
 .menu__link {
   display: block;
   padding: 15px;
@@ -74,7 +74,7 @@ footer {
   font-size: 18px;
 }
 .menu__link:hover {
-  background-color: lightgrey;
+  background-color: lightgray;
 }
 @media screen and (min-width: 700px) {
   .menu__link {
@@ -120,190 +120,87 @@ footer {
   }
 }
 
-.middle {
-  margin-top: 100px;
-  margin-left: 30px;
-  margin-right: 30px;
+.form_body {
+  padding: 10px;
 }
-
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(150px, 350px));
-  justify-content: center;
-  gap: 10px;
-}
-.portfolio img {
-  width: 100%;
+.form_body input {
+  padding: 10px;
+  border: 1px solid gray;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  grid-column: 1/span 1;
+  grid-row: 3;
+  width: 250px;
+  box-shadow: 1px 1px 8px lightgray;
 }
 @media screen and (min-width: 550px) {
-  .portfolio {
-    grid-template-columns: repeat(2, minmax(150px, 350px));
+  .form_body input {
+    width: 300px;
   }
 }
-@media screen and (min-width: 800px) {
-  .portfolio {
-    grid-template-columns: repeat(3, minmax(150px, 1fr));
+@media screen and (min-width: 900px) {
+  .form_body input {
+    width: 500px;
+    font-size: 20px;
   }
 }
-
-.wedding_img {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  place-self: center;
-  border: 1px solid lightgrey;
-  box-shadow: 1px 1px 2px lightgrey;
+.form_body textarea {
+  border-radius: 4px;
+  border: 1px solid gray;
+  margin-top: 10px;
+  padding: 5px;
+  width: 250px;
+  padding: 10px;
 }
-
-.grid_item {
-  position: relative;
-}
-
-.grid_text {
-  position: absolute;
-  bottom: 6%;
-  left: 30%;
-  font-family: "Sacramento", san-serif;
-  font-size: 18px;
-  color: #68696b;
-  font-weight: 400;
-}
-@media screen and (min-width: 500px) {
-  .grid_text {
-    font-size: 3vw;
+@media screen and (min-width: 550px) {
+  .form_body textarea {
+    width: 300px;
   }
 }
-.grid_text p {
-  margin: 0;
+@media screen and (min-width: 900px) {
+  .form_body textarea {
+    width: 500px;
+  }
 }
-
-.child {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  place-self: center;
-  border: 1px solid lightgrey;
-  box-shadow: 1px 1px 2px lightgrey;
-}
-
-.portrait {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  place-self: center;
-  border: 1px solid lightgrey;
-  box-shadow: 1px 1px 2px lightgrey;
-}
-
-.animals {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 2;
-  place-self: center;
-  border: 1px solid lightgrey;
-  box-shadow: 1px 1px 2px lightgrey;
-}
-
-.product {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  place-self: center;
-  border: 1px solid lightgrey;
-  box-shadow: 1px 1px 2px lightgrey;
-}
-
-.food {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  place-self: center;
-  border: 1px solid lightgrey;
-  box-shadow: 1px 1px 2px lightgrey;
-}
-
-.photos_food {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(150px, 1fr));
-  gap: 10px;
-  justify-items: center;
-}
-.photos_food img {
-  width: 100%;
-}
-
-.photos_child,
-.wedding_photos,
-.portrait_photos,
-.animal_photos,
-.product_photos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 10px;
-  justify-items: center;
-}
-.photos_child img,
-.wedding_photos img,
-.portrait_photos img,
-.animal_photos img,
-.product_photos img {
-  width: 100%;
-}
-
-.photos_child img,
-.wedding_photos img,
-.photos_food img,
-.portrait_photos img,
-.animal_photos img,
-.product_photos img {
-  width: 100%;
-}
-
-.about_photo img {
-  width: 100%;
-}
-
-.about_text {
+.form_body label {
+  font-size: 16px;
   font-family: "Montserrat", san-serif;
-  text-align: start;
-  font-size: 18px;
-  padding: 15px;
-  font-weight: 400;
+  display: block;
+  font-size: 16px;
+  color: gray;
+  margin-bottom: 5px;
 }
-@media screen and (min-width: 550px) {
-  .about_text {
-    text-align: center;
-  }
-}
-.about_text p {
-  margin-top: 0;
-  color: grey;
-}
-.about_text a {
-  text-decoration: none;
-  color: grey;
-  font-weight: bold;
-  font-style: italic;
-}
-.about_text h1 {
-  color: black;
-  font-size: 20px;
-}
-@media screen and (min-width: 550px) {
-  .about_text h1 {
-    text-align: center;
-    font-size: 25px;
+@media screen and (min-width: 900px) {
+  .form_body label {
+    font-size: 20px;
   }
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  justify-content: center;
+button {
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-family: "Montserrat", san-serif;
+  width: 270px;
+}
+button:hover, button:active {
+  background-color: black;
 }
 @media screen and (min-width: 550px) {
-  .container {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: row;
-    row-gap: 40px;
+  button {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 900px) {
+  button {
+    font-size: 20px;
+    width: 520px;
   }
 }
 
@@ -333,124 +230,298 @@ footer {
   font-family: "Montserrat", san-serif;
 }
 
-.form_body {
-  padding: 10px;
+body {
+  margin: 0px;
 }
-.form_body input {
-  padding: 10px;
-  border: 1px solid grey;
+
+.middle {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.middle_header {
   text-align: center;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  grid-column: 1/span 1;
-  grid-row: 3;
-  width: 250px;
-  box-shadow: 1px 1px 8px lightgrey;
-}
-@media screen and (min-width: 550px) {
-  .form_body input {
-    width: 300px;
-  }
-}
-@media screen and (min-width: 900px) {
-  .form_body input {
-    width: 500px;
-    font-size: 20px;
-  }
-}
-.form_body textarea {
-  border-radius: 4px;
-  border: 1px solid grey;
-  margin-top: 10px;
-  padding: 5px;
-  width: 250px;
-  padding: 10px;
-}
-@media screen and (min-width: 550px) {
-  .form_body textarea {
-    width: 300px;
-  }
-}
-@media screen and (min-width: 900px) {
-  .form_body textarea {
-    width: 500px;
-  }
-}
-.form_body label {
-  font-size: 16px;
   font-family: "Montserrat", san-serif;
+  margin-bottom: 40px;
+  color: gray;
+  font-size: 15px;
+}
+.middle_header h1::before {
+  content: "";
+  width: 60px;
+  height: 2.5px;
   display: block;
-  font-size: 16px;
-  color: grey;
-  margin-bottom: 5px;
-}
-@media screen and (min-width: 900px) {
-  .form_body label {
-    font-size: 20px;
-  }
-}
-.form_body button {
-  border-radius: 4px;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: grey;
-  color: white;
-  font-size: 16px;
-  border: none;
-  font-family: "Montserrat", sans-serif;
-  width: 270px;
+  margin: auto;
+  background-image: linear-gradient(to right, lightgray, gray);
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  justify-content: center;
+}
 @media screen and (min-width: 550px) {
-  .form_body button {
-    width: 320px;
-  }
-}
-@media screen and (min-width: 900px) {
-  .form_body button {
-    font-size: 20px;
-    width: 520px;
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    row-gap: 40px;
   }
 }
 
-.ctc_text1 {
-  grid-row: 2;
-  font-family: "Montserrat", san-serif;
-  color: black;
-  font-size: 16px;
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(150px, 350px));
+  justify-content: center;
+  gap: 10px;
+}
+.portfolio img {
   width: 100%;
 }
-@media screen and (min-width: 900px) {
-  .ctc_text1 {
-    font-size: 20px;
+@media screen and (min-width: 550px) {
+  .portfolio {
+    grid-template-columns: repeat(2, minmax(150px, 350px));
   }
 }
-.ctc_text1 li {
-  list-style: none;
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 10px;
+@media screen and (min-width: 800px) {
+  .portfolio {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
+}
+
+.wedding_img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  place-self: center;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 2px lightgray;
+}
+
+.grid_item {
+  position: relative;
+}
+
+.grid_text {
+  position: absolute;
+  bottom: 6%;
+  left: 30%;
+  font-family: "Sacramento", san-serif;
+  font-size: 18px;
+  color: #68696b;
+  font-weight: 400;
+}
+@media screen and (min-width: 500px) {
+  .grid_text {
+    font-size: 3vw;
+  }
+}
+.grid_text p {
+  margin: 0;
+}
+
+.child {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  place-self: center;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 2px lightgray;
+}
+
+.portrait {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  place-self: center;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 2px lightgray;
+}
+
+.animals {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  place-self: center;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 2px lightgray;
+}
+
+.product {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  place-self: center;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 2px lightgray;
+}
+
+.food {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  place-self: center;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 2px lightgray;
+}
+
+.photos_food {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(150px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+.photos_food img {
+  width: 100%;
 }
 @media screen and (min-width: 550px) {
-  .ctc_text1 li {
-    margin-bottom: 20px;
+  .photos_food {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
   }
 }
-.ctc_text1 .ctc_phone {
-  list-style-image: url(/images/phone_icon.svg);
+@media screen and (min-width: 1000px) {
+  .photos_food {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
 }
-.ctc_text1 .ctc_mail {
-  list-style-image: url(/images/mail_icon.svg);
+
+.photos_child,
+.wedding_photos,
+.portrait_photos,
+.animal_photos,
+.product_photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+  justify-items: center;
 }
-.ctc_text1 .ctc_address {
-  list-style-image: url(/images/home_icon.svg);
+.photos_child img,
+.wedding_photos img,
+.portrait_photos img,
+.animal_photos img,
+.product_photos img {
+  width: 100%;
 }
-.ctc_text1 ul {
-  padding-left: 20px;
+
+.photos_child img,
+.wedding_photos img,
+.photos_food img,
+.portrait_photos img,
+.animal_photos img,
+.product_photos img {
+  width: 100%;
 }
-.ctc_text1 a {
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+@media screen and (min-width: 550px) {
+  .services {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 900px) {
+  .services {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.services_box {
+  outline: 1px solid gray;
+  outline-offset: -10px;
+  font-family: "Montserrat", san-serif;
+  padding: 10px;
+  box-shadow: 1px 1px 4px lightgray;
+  color: gray;
+  border-radius: 5px;
+}
+.services_box h1 {
+  text-align: center;
+  color: gray;
+}
+.services_box li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  list-style-image: url(/images/header_icon_small.svg);
+}
+
+.pricelist {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+@media screen and (min-width: 550px) {
+  .pricelist {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 900px) {
+  .pricelist {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.pricelist_text {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Montserrat", san-serif;
+  box-shadow: 1px 1px 3px lightgray;
+  background: lightgray;
+  background-image: linear-gradient(to top, #ffffff, #d5d5da, #cfcfd3);
+}
+.pricelist_text h1 {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.pricelist_text h2 {
+  text-align: center;
+  color: white;
+  margin-top: 0;
+}
+.pricelist_text li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  list-style-image: url(/images/header_icon_small.svg);
+}
+
+.about_photo img {
+  width: 100%;
+}
+
+.about_text {
+  font-family: "Montserrat", san-serif;
+  text-align: start;
+  font-size: 18px;
+  padding: 15px;
+  font-weight: 400;
+}
+@media screen and (min-width: 550px) {
+  .about_text {
+    text-align: center;
+  }
+}
+.about_text p {
+  margin-top: 0;
+  color: gray;
+}
+.about_text a {
   text-decoration: none;
+  color: gray;
+  font-weight: bold;
+  font-style: italic;
+}
+.about_text h1 {
   color: black;
+  font-size: 20px;
+}
+@media screen and (min-width: 550px) {
+  .about_text h1 {
+    text-align: center;
+    font-size: 25px;
+  }
 }
 
 .ctc_map {
@@ -474,98 +545,41 @@ footer {
   position: absolute;
 }
 
-.pricelist {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
-@media screen and (min-width: 550px) {
-  .pricelist {
-    grid-template-columns: 1fr 1fr;
-  }
+.ctc_text1 {
+  grid-row: 2;
+  font-family: "Montserrat", san-serif;
+  color: black;
+  font-size: 16px;
+  width: 100%;
 }
 @media screen and (min-width: 900px) {
-  .pricelist {
-    grid-template-columns: 1fr 1fr 1fr;
+  .ctc_text1 {
+    font-size: 20px;
   }
 }
-
-.pricelist_text {
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  padding: 10px;
-  font-family: "Montserrat";
-  box-shadow: 1px 1px 3px lightgrey;
-  background: lightgrey;
-  background-image: linear-gradient(to top, #ffffff, #d5d5da, #cfcfd3);
-}
-.pricelist_text h1 {
-  text-align: center;
-  color: white;
-  font-style: italic;
-  margin-bottom: 10px;
-}
-.pricelist_text h2 {
-  text-align: center;
-  color: white;
-  margin-top: 0;
-}
-.pricelist_text li {
-  margin-bottom: 10px;
-  font-size: 18px;
-  list-style-image: url(/images/header_icon_small.svg);
-}
-.pricelist_text ul {
-  list-style-type: circle;
-}
-
-.middle_header {
-  text-align: center;
+.ctc_text1 li {
+  list-style: none;
   font-family: "Montserrat", san-serif;
-  margin-bottom: 40px;
-  color: grey;
-  font-size: 15px;
-}
-.middle_header h1::before {
-  content: "";
-  width: 60px;
-  height: 2.5px;
-  display: block;
-  margin: auto;
-  background-image: linear-gradient(to right, lightgrey, grey);
-}
-
-.services {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 550px) {
-  .services {
-    grid-template-columns: 1fr 1fr;
+  .ctc_text1 li {
+    margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 900px) {
-  .services {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+.ctc_text1 .ctc_phone {
+  list-style-image: url(/images/phone_icon.svg);
 }
-
-.services_box {
-  outline: 1px solid grey;
-  outline-offset: -10px;
-  font-family: "Montserrat", san-serif;
-  padding: 10px;
-  box-shadow: 1px 1px 4px lightgrey;
-  color: grey;
-  border-radius: 5px;
+.ctc_text1 .ctc_mail {
+  list-style-image: url(/images/mail_icon.svg);
 }
-.services_box h1 {
-  text-align: center;
-  color: grey;
+.ctc_text1 .ctc_address {
+  list-style-image: url(/images/home_icon.svg);
 }
-.services_box li {
-  margin-bottom: 10px;
-  font-size: 15px;
-  list-style-image: url(/images/header_icon_small.svg);
+.ctc_text1 ul {
+  padding-left: 20px;
+}
+.ctc_text1 a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

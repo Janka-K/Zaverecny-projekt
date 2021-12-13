@@ -1,3 +1,6 @@
+@use 'align';
+@use 'colors';
+@use 'fonts';
 
 .hero {
     border-bottom: 1px solid colors.$color_black;

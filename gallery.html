@@ -1,64 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Caveat&family=Montserrat:wght@300;400;500&family=Petemoss&family=Sacramento&family=Yesteryear&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <h1>Creative studio</h1>
-    </header>
-    <section class="top">
-      <div class="menu">
-        <ul>
-          <li><a href="#">O mě</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Další služby</a></li>
-          <li><a href="#">Ceník</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </div>
-    </section>
+---
+layout: hlavni-sablona.njk
+title: Galerie
+---
 
-    <section class="middle">
-      <div class="portfolio">
-        <div class="grid_item">
-        <img class="wedding_img" src="/images/wedding.jpg" alt="wedding" />
-        <div class="grid_text">
-          <p>Svatební focení</p>
-        </div>
-      </div>
-      <div class="grid_item">
-        <img class="child" src="/images/child.jpg" alt="child" />
-        <div class="grid_text"><p>Focení dětí</p></div>
-      </div>
-      <div class="grid_item">
-        <img class="portrait" src="/images/portrait.jpg" alt="portrait" />
-        <div class="grid_text"><p>Portrétní foto</p></div>
-      </div>
-      <div class="grid_item">
-        <img class="animals" src="/images/animals.jpg" alt="animal" />
-        <div class="grid_text"><p>Focení mazlíčků</p></div>
-      </div>
-      <div class="grid_item">
-        <img class="product" src="/images/product.jpg" alt="produkt" />
-        <div class="grid_text"><p>Produktové focení</p></div>
-      </div>
-      <div class="grid_item">
-        <img class="food" src="/images/food.jpg" alt="food" />
-        <div class="grid_text"><p>Focení jídla</p></div>
-      </div>
-      </div>
-    </section>
-    <footer>&copy JankaK 2021</footer>
-  </body>
-</html>
+<div class="portfolio">
+  <a href="/gallery/wedding/">
+  <div class="grid_item">
+    <img class="wedding_img" src="/images/wedding.jpg" alt="wedding" />
+    <div class="grid_text">
+      <p>Svatební focení</p>
+    </div>
+  </div>
+</a>
+<a href="/gallery/child/">
+  <div class="grid_item">
+    <img class="child" src="/images/child.jpg" alt="child" />
+    <div class="grid_text"><p>Focení dětí</p></div>
+  </div>
+</a>
+<a href="/gallery/portrait/">
+  <div class="grid_item">
+    <img class="portrait" src="/images/portrait.jpg" alt="portrait" />
+    <div class="grid_text"><p>Portrétní foto</p></div>
+  </div>
+</a>
+<a href="/gallery/animals/">
+  <div class="grid_item">
+    <img class="animals" src="/images/animals.jpg" alt="animal" />
+    <div class="grid_text"><p>Focení mazlíčků</p></div>
+  </div>
+</a>
+<a href="/gallery/products/">
+  <div class="grid_item">
+    <img class="product" src="/images/product.jpg" alt="produkt" />
+    <div class="grid_text"><p>Produktové focení</p></div>
+  </div>
+</a>
+<a href="/gallery/food/">
+  <div class="grid_item">
+    <img class="food" src="/images/food.jpg" alt="food" />
+    <div class="grid_text"><p>Focení jídla</p></div>
+  </div>
+</a>
+</div>

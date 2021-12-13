@@ -1,77 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>O mě</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Caveat&family=Montserrat:wght@300;400;500&family=Petemoss&family=Sacramento&family=Yesteryear&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+---
+layout: hlavni-sablona.njk
+title: O mě
+---
 
-  <body>
-    <header class="hero">
-      <div class="hero_container">
-        <img class="hero_icon" src="/images/header_icon.svg" alt="ikona" />
-        <h1 class="hero_text">Creative studio</h1>
-      </div>
-    </header>
+<div class="about">
+  <div class="about_photo">
+    <img src="/images/photograph.jpg" alt="fotograf" />
+  </div>
+</div>
 
-    <section class="top">
-      <div class="menu">
-        <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
-        <label for="menu-checkbox" class="menu__toggler">☰Menu</label>
+<div class="about_text">
+  <h1>Pár slov o mě</h1>
+  <p>Ahoj, jmenuji se Radek a jsem fotograf s duší kreativce.</p>
+  <p>
+    Fotografování je moje vášeň. Rád pro Vás nafotím fotografie do Vašeho
+    domácího alba. Pro Vaši představu, jakému focení se věnuji, můžete
+    nahlédnout do mé <a href="/gallery/">galerie</a>.
+  </p>
+  <p>
+    Pokud v galerii nenajdete to, co hledáte, je možné se na konkrétním focení
+    dohodnout individuálně podle Vašich potřeb.
+  </p>
 
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#">O mě</a></li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Portfolio</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Další služby</a>
-          </li>
-          <li class="menu__item"><a class="menu__link" href="#">Ceník</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
-        </ul>
-      </div>
-    </section>
-    <section class="middle">
-      <div class="about">
-        <div class="about_photo">
-          <img src="images/photograph.jpg" alt="fotograf" />
-        </div>
-      </div>
+  <p>
+    Mimo fotografii se věnuji i dalším aktivitám mezi které patří návrhy
+    interiérů, filmová tvorba a hudebni a textová kompozice pro reklamu nebo
+    film. Ve volném čase mne najdete jak se procházím přírodou s foťákem na krku
+    nebo si v restauraci pochutnávám na dobrém sushi:).
+  </p>
 
-      <div class="about_text">
-        <h1>Pár slov o mě</h1>
-        <p>Ahoj, jmenuji se Radek a jsem fotograf s duší kreativce.</p>
-        <p>
-          Fotografování je moje vášeň. Rád pro Vás nafotím fotografie do Vašeho
-          domácího alba. Pro Vaši představu, jakému focení se věnuji, můžete
-          nahlédnout do mé <a href="/gallery.html">galerie</a>.
-        </p>
-        <p>
-          Pokud v galerii nenajdete to, co hledáte, je možné se na konkrétním
-          focení dohodnout individuálně podle Vašich potřeb.
-        </p>
-
-        <p>
-          Mimo fotografii se věnuji i dalším aktivitám mezi které patří návrhy
-          interiérů, filmová tvorba a hudebni a textová kompozice pro reklamu
-          nebo film. Ve volném čase mne najdete jak se procházím přírodou s
-          foťákem na krku nebo si v restauraci pochutnávám na dobrém sushi:).
-        </p>
-
-        <p>Budu se těšit na naši budoucí spolupráci!</p>
-      </div>
-  
-    </section>
-
-    <footer>&copy JankaK 2021</footer>
-  </body>
-</html>
+  <p>Budu se těšit na naši budoucí spolupráci!</p>
+</div>

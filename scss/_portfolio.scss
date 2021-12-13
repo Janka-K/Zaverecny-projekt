@@ -97,15 +97,24 @@
   
   .photos_food {
     display: grid;
-    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
     gap: 10px;
     justify-items: align.$align_center;
-  
+
     img {
       width: 100%;
     }
+    @media screen and (min-width: 550px) {
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
+      
+    }
+    @media screen and (min-width: 1000px) {
+      grid-template-columns: repeat(3, minmax(150px, 1fr));
+
   }
-  
+}
+
+
   .photos_child,
   .wedding_photos,
   .portrait_photos,

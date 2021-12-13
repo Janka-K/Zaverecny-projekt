@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{{title}}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Caveat&family=Montserrat:wght@300;400;500&family=Petemoss&family=Sacramento&family=Yesteryear&display=swap"
+            rel="stylesheet"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+    </head>
+    <body>
+        <header class="hero">
+            <div class="hero_container">
+                <img class="hero_icon" src="/images/header_icon.svg" alt="ikona"/>
+                <h1 class="hero_text">Creative studio</h1>
+            </div>
+        </header>
+        <section class="top">
+            <div class="menu">
+                <input type="checkbox" class="menu__checkbox" id="menu-checkbox"/>
+                <label for="menu-checkbox" class="menu__toggler">☰</label>
+                <ul class="menu__list">
+                    <li class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }}">
+                        <a class="menu__link" href="/">O mě</a>
+                    </li>
+                    <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'gallery' }}">
+                        <a class="menu__link" href="/gallery/">Portfolio</a>
+                    </li>
+                    <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'services'}}">
+                        <a class="menu__link" href="/services/">Další služby</a>
+                    </li>
+                    <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'pricelist'}}">
+                        <a class="menu__link" href="/pricelist/">Ceník</a>
+                    </li>
+                    <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'contact'}}">
+                        <a class="menu__link" href="/contact/">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="middle">
 
+            {{ content | safe }}
+
+        </section>
+        <footer>&copy JankaK 2021</footer>
+         <script src="/fslightbox.js"></script>
+    </body>
+</html>
