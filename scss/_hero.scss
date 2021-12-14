@@ -8,14 +8,14 @@
     .hero_container{
       display:flex;
       justify-content: align.$align_center;
+      align-items: align.$align_center;
       gap:5px;
   
   
     }
   
-    .hero_icon{
+    .hero_icon_img{
       width: 30px;
-      align-self: align.$align_center;
       margin-bottom: 10px;
   
       @media screen and (min-width: 550px) {

@@ -15,7 +15,11 @@
     <body>
         <header class="hero">
             <div class="hero_container">
-                <img class="hero_icon" src="/images/header_icon.svg" alt="ikona"/>
+                <a href="/">
+                <div class = "hero_icon">
+                <img class="hero_icon_img" src="/images/header_icon.svg" alt="ikona"/>
+                </div>
+                </a>
                 <a class = "hero_text_link" href="/">
                 <div class ="hero_text_box">
                 <h1 class="hero_text">Creative studio</h1>
@@ -29,7 +33,7 @@
                 <input type="checkbox" class="menu_checkbox" id="menu-checkbox"/>
                 <label for="menu-checkbox" class="menu_hamburger">☰</label>
                 <ul class="menu_list">
-                    <li class="menu_item {{ 'menu_item--active' if page.fileSlug === '' }}">
+                    <li class="menu_item {{ 'menu_item--click' if page.fileSlug === '' }}">
                         <a class="menu_link" href="/">O mě</a>
                     </li>
                     <li class="menu_item {{ 'menu_item--click' if page.fileSlug === 'gallery' }}">

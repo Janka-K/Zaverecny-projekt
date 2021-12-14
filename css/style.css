@@ -92,15 +92,15 @@ footer {
 .hero .hero_container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5px;
 }
-.hero .hero_icon {
+.hero .hero_icon_img {
   width: 30px;
-  align-self: center;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 550px) {
-  .hero .hero_icon {
+  .hero .hero_icon_img {
     width: 50px;
     margin-bottom: 20px;
   }
