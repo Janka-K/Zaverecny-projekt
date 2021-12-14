@@ -7,6 +7,8 @@ module.exports = function(eleventyConfig) {
 
 	// Zkopírovat css/ to _site/css/
 	eleventyConfig.addPassthroughCopy("css");
+
+  //zkopirovat lightbox / to _site/fslightbox.js 
   eleventyConfig.addPassthroughCopy("fslightbox.js"); 
 
   return {
