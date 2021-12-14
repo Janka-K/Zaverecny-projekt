@@ -13,7 +13,7 @@
   }
   
   
-  .menu__toggler {
+  .menu_hamburger {
     font-family: fonts.$menu_font;
   
   
@@ -23,15 +23,15 @@
    
   }
   
-  .menu__checkbox{
+  .menu_checkbox{
     position: absolute;
     left: -9999px;
-    &:checked ~ .menu__list{
+    &:checked ~ .menu_list{
       display: block;
     }
   }
   
-  .menu__list{
+  .menu_list{
     display: none;
     margin: 0;
     padding:0;
@@ -46,7 +46,7 @@
     }
   }
   
-  .menu__item {
+  .menu_item {
     border-bottom: 1px solid colors.$color_black;
     @media screen and (min-width: 700px) {
       border: none;
@@ -54,7 +54,7 @@
     }
   }
 
-  .menu__item--active {
+  .menu_item--click {
         border-bottom: 3px solid colors.$color_black;
       }
   
@@ -62,7 +62,7 @@
     
   
   
-  .menu__link {
+  .menu_link {
     display: block;
     padding: 15px;
     text-decoration: none;

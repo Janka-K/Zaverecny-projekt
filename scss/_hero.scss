@@ -34,9 +34,17 @@
       font-size: 40px;
       align-self: align.$align_center;
     
+    
       @media screen and (min-width: 550px){
         font-size: 60px;
       }
   
       }
   }
+
+  .hero_text_link {
+    text-decoration: none;
+    color: colors.$color_black;
+  }
+
+  

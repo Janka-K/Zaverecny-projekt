@@ -16,28 +16,33 @@
         <header class="hero">
             <div class="hero_container">
                 <img class="hero_icon" src="/images/header_icon.svg" alt="ikona"/>
+                <a class = "hero_text_link" href="/">
+                <div class ="hero_text_box">
                 <h1 class="hero_text">Creative studio</h1>
+                </div>
+                </a>
             </div>
+    
         </header>
         <section class="top">
             <div class="menu">
-                <input type="checkbox" class="menu__checkbox" id="menu-checkbox"/>
-                <label for="menu-checkbox" class="menu__toggler">☰</label>
-                <ul class="menu__list">
-                    <li class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }}">
-                        <a class="menu__link" href="/">O mě</a>
+                <input type="checkbox" class="menu_checkbox" id="menu-checkbox"/>
+                <label for="menu-checkbox" class="menu_hamburger">☰</label>
+                <ul class="menu_list">
+                    <li class="menu_item {{ 'menu_item--active' if page.fileSlug === '' }}">
+                        <a class="menu_link" href="/">O mě</a>
                     </li>
-                    <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'gallery' }}">
-                        <a class="menu__link" href="/gallery/">Portfolio</a>
+                    <li class="menu_item {{ 'menu_item--click' if page.fileSlug === 'gallery' }}">
+                        <a class="menu_link" href="/gallery/">Portfolio</a>
                     </li>
-                    <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'services'}}">
-                        <a class="menu__link" href="/services/">Další služby</a>
+                    <li class="menu_item {{ 'menu_item--click' if page.fileSlug === 'services'}}">
+                        <a class="menu_link" href="/services/">Další služby</a>
                     </li>
-                    <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'pricelist'}}">
-                        <a class="menu__link" href="/pricelist/">Ceník</a>
+                    <li class="menu__item {{ 'menu_item--click' if page.fileSlug === 'pricelist'}}">
+                        <a class="menu_link" href="/pricelist/">Ceník</a>
                     </li>
-                    <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'contact'}}">
-                        <a class="menu__link" href="/contact/">Kontakt</a>
+                    <li class="menu__item {{ 'menu_item--click' if page.fileSlug === 'contact'}}">
+                        <a class="menu_link" href="/contact/">Kontakt</a>
                     </li>
                 </ul>
             </div>
