@@ -62,7 +62,12 @@ footer {
 }
 
 .menu_item--click {
-  border-bottom: 3px solid black;
+  border-bottom: 1px solid black;
+}
+@media screen and (min-width: 700px) {
+  .menu_item--click {
+    border-bottom: 3px solid black;
+  }
 }
 
 .menu_link {
@@ -272,7 +277,7 @@ body {
   .container {
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: row;
-    row-gap: 40px;
+    row-gap: 30px;
   }
 }
 
@@ -395,7 +400,7 @@ body {
 .animal_photos,
 .product_photos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(1, minmax(150px, 350px));
   gap: 10px;
   justify-items: center;
 }
@@ -405,6 +410,24 @@ body {
 .animal_photos img,
 .product_photos img {
   width: 100%;
+}
+@media screen and (min-width: 550px) {
+  .photos_child,
+.wedding_photos,
+.portrait_photos,
+.animal_photos,
+.product_photos {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .photos_child,
+.wedding_photos,
+.portrait_photos,
+.animal_photos,
+.product_photos {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
 }
 
 .photos_child img,
@@ -433,7 +456,6 @@ body {
 }
 
 .services_box {
-  outline: 1px solid gray;
   outline-offset: -10px;
   font-family: "Montserrat", san-serif;
   padding: 10px;
@@ -536,10 +558,16 @@ body {
   position: relative;
   height: 0;
   grid-row: 1;
+  border: 2px solid lightgrey;
 }
 @media screen and (min-width: 550px) {
   .ctc_map {
     grid-column: 1/span 2;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .ctc_map {
+    padding-bottom: 30.25%;
   }
 }
 

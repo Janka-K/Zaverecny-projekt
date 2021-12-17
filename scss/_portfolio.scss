@@ -122,14 +122,20 @@
   .animal_photos,
   .product_photos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(1, minmax(150px, 350px));
     gap: 10px;
     justify-items: align.$align_center;
   
     img {
       width: 100%;
     }
+    @media screen and (min-width: 550px) {
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
   }
+  @media screen and (min-width: 1000px) {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
+}
   
   .photos_child img,
   .wedding_photos img,
