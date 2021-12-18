@@ -18,31 +18,32 @@
   }
   
   .pricelist_text {
-    border: 1px solid colors.$color_light;
+    outline-offset: -10px;
     border-radius: 5px;
     padding: 10px;
     font-family: fonts.$body_font;
     box-shadow: 1px 1px 3px colors.$color_light;
-    background: colors.$color_light;
-    background-image: linear-gradient(to top, #ffffff, #d5d5da, #cfcfd3);
+    background-color: colors.$color_white;
+
   
     h1 {
       text-align: align.$align_center;
-      color: colors.$color_white;
+      color:colors.$color_black;
       font-style: italic;
       margin-bottom: 10px;
     }
   
     h2 {
       text-align: align.$align_center;
-      color: colors.$color_white;
+      color: colors.$color_black;
       margin-top: 0;
     }
   
     li {
       margin-bottom: 10px;
-      font-size: 18px;
+      font-size: 15px;
       list-style-image: url(/images/header_icon_small.svg);
+      color: colors.$color_grey;
   
     }
   
